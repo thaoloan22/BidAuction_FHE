@@ -9,7 +9,6 @@ Setup Instructions
 Usage
 Smart Contract Details
 Frontend Details
-Troubleshooting
 
 # Overview
 The SealedBidAuction smart contract is deployed on a blockchain network supporting FHEVM (e.g., Zama's Sepolia testnet). It enables a first-price sealed-bid auction where:
@@ -149,23 +148,3 @@ Chain Info: Displays chain ID, MetaMask accounts, contract address, and admin st
 Auction State: Shows auction item, start/end times, user deposit, winner, and winning amount.
 Action Buttons: For starting/ending auctions, placing bids, requesting decryption, refunds, and withdrawing proceeds.
 
-# Troubleshooting
-
-MetaMask Connection Issues:
-Ensure MetaMask is installed and unlocked.
-Verify the correct network is selected in MetaMask.
-
-
-# Contract Not Deployed:
-Check SealedBidAuctionAddresses.ts for the correct contract address.
-Deploy the contract if it hasn't been deployed yet.
-
-
-# FHEVM Errors:
-Ensure the fhevm library is properly initialized.
-Verify the network supports FHEVM (e.g., Zama Sepolia).
-
-
-# Transaction Failures:
-Check for sufficient gas and ETH in your wallet.
-Review console logs for error messages from useSealedBidAuction.
