@@ -24,7 +24,7 @@ export const SealedBidAuctionDemo = () => {
     initialMockChains,
   } = useMetaMaskEthersSigner();
 
-  const { instance: fhevmInstance, status: fhevmStatus, error: fhevmError } = useFhevm({
+  const { instance: fhevmInstance } = useFhevm({
     provider,
     chainId,
     initialMockChains,
@@ -60,10 +60,8 @@ export const SealedBidAuctionDemo = () => {
     deposit,
     winner,
     winningAmount,
-    decryptedTotalWinningAmount,
     isAdmin,
     currentTimestamp,
-    isRefreshing,
     isStartingAuction,
     isSettingItem,
     isPlacingBid,
